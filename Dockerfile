@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 
 COPY . /app
 
-ENTRYPOINT [ "waitress-serve app:app"]
+ENTRYPOINT [ "waitress-serve --listen=127.0.0.1:5000 app:app"]
