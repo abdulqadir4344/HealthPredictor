@@ -1,11 +1,3 @@
-FROM python:3.8.0-slim-bullseye
-WORKDIR /app
-
-ENV PYTHONUNBUFFERED 1
-ENV PYTHONDONTWRITEBYTECODE 1
-
-# install system dependencies
-RUN apt-get update
 
 # install dependencies
 RUN pip install --upgrade pip
@@ -14,4 +6,4 @@ RUN pip install -r requirements.txt
 
 COPY . /app
 
-ENTRYPOINT [ "waitress-serve --listen=127.0.0.1:5000 app:app"]
+ENTRYPOINT [ "waitress-serve app:app"]
