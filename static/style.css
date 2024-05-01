@@ -10,9 +10,15 @@ body {
 #healthlogo{
   margin: 0;
   padding-top: 5px;
-  height: 57px;!important
+  height: 47px;!important
   width: 96px;!important
   
+}
+#darkmode{
+  top: 38px;
+}
+#banner{
+  margin-top: 18px;
 }
 #Fetal_Health{
   margin-top: 56px;
@@ -27,6 +33,7 @@ body {
 {
   background-color: #a29e9e5c;
 }
+
 .mynav , .mynav a 
 {
   color: black;
